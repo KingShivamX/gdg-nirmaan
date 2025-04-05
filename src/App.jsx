@@ -201,14 +201,16 @@ function App() {
                 Download Brochure
               </a>
               <a 
-                href="#" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdYaDYEiCb4vv5E87HxAYEiaTb_0OEnIHEGdyfiIBgJlfc5xg/viewform?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: 'white',
                   color: '#333',
                   fontWeight: 'bold',
-                  padding: '14px 36px',
+                  padding: 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
                   borderRadius: '50px',
-                  fontSize: '18px',
+                  fontSize: 'clamp(14px, 2.5vw, 18px)',
                   textDecoration: 'none',
                   display: 'inline-block',
                   margin: '10px',
@@ -218,8 +220,8 @@ function App() {
                   position: 'relative',
                   overflow: 'hidden',
                   zIndex: 1,
+                  whiteSpace: 'nowrap'
                 }}
-                onClick={() => alert('Registration form link will be added')}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = '#3367D6';
                   e.currentTarget.style.transform = 'translateY(-5px)';
