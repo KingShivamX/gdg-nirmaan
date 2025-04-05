@@ -148,20 +148,21 @@ function App() {
           <div style={{
             maxWidth: '800px',
             margin: '0 auto 40px',
-            padding: '20px',
+            padding: '25px 20px',
             backgroundColor: 'rgba(255,255,255,0.9)',
             backdropFilter: 'blur(10px)',
             borderRadius: '15px',
             boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
             border: '1px solid rgba(255,255,255,0.8)',
-            width: 'calc(100% - 40px)'
+            width: 'calc(100% - 30px)'
           }}>
             <p style={{
-              fontSize: '1.2rem',
-              marginBottom: '24px',
+              fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
+              marginBottom: '30px',
               color: '#333',
               fontWeight: 'bold',
-              lineHeight: 1.6
+              lineHeight: 1.6,
+              padding: '0 15px'
             }}>
               Nirmaan 2025, the 3rd Edition of our flagship hackathon, is a 48-hour hybrid competition
               open to all skill levels.
@@ -248,7 +249,7 @@ function App() {
           </div>
 
           {/* Key Information */}
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', maxWidth: '1200px', margin: '40px auto 50px', width: '100%', padding: '0 20px'}}>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', maxWidth: '1200px', margin: '40px auto 50px', width: '95%'}}>
             <div style={{
               backgroundColor: 'rgba(255,255,255,0.9)',
               backdropFilter: 'blur(10px)',
@@ -260,18 +261,18 @@ function App() {
               position: 'relative'
             }}>
               <div style={{height: '4px', width: '60px', background: 'linear-gradient(to right, #4285F4, #34A853)', marginBottom: '20px', marginLeft: 'auto', marginRight: 'auto'}}></div>
-              <h3 style={{fontSize: 'clamp(18px, 4vw, 24px)', fontWeight: 'bold', marginBottom: '20px', color: '#333', letterSpacing: '0.5px', paddingBottom: '5px', borderBottom: '2px solid rgba(0,0,0,0.05)'}}>Event Format</h3>
-              <ul style={{textAlign: 'left', listStyleType: 'none', paddingLeft: '15px', color: '#333'}}>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+              <h3 style={{fontSize: 'clamp(22px, 5vw, 28px)', fontWeight: 'bold', marginBottom: '22px', color: '#333', letterSpacing: '0.5px', paddingBottom: '8px', borderBottom: '2px solid rgba(0,0,0,0.05)'}}>Event Format</h3>
+              <ul style={{textAlign: 'left', listStyleType: 'none', paddingLeft: '10px', color: '#333', margin: '0 auto', maxWidth: '280px'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#4285F4', marginRight: '10px', fontWeight: 'bold'}}>•</span> 48-hour hybrid hackathon
                 </li>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#EA4335', marginRight: '10px', fontWeight: 'bold'}}>•</span> Open to all college students
                 </li>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#FBBC05', marginRight: '10px', fontWeight: 'bold'}}>•</span> Maximum team size: 3 Members
                 </li>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#34A853', marginRight: '10px', fontWeight: 'bold'}}>•</span> Inter-College teams allowed
                 </li>
               </ul>
@@ -288,15 +289,15 @@ function App() {
               position: 'relative'
             }}>
               <div style={{height: '4px', width: '60px', background: 'linear-gradient(to right, #EA4335, #FBBC05)', marginBottom: '20px', marginLeft: 'auto', marginRight: 'auto'}}></div>
-              <h3 style={{fontSize: 'clamp(18px, 4vw, 24px)', fontWeight: 'bold', marginBottom: '20px', color: '#333', letterSpacing: '0.5px', paddingBottom: '5px', borderBottom: '2px solid rgba(0,0,0,0.05)'}}>Timeline</h3>
-              <ul style={{textAlign: 'left', listStyleType: 'none', paddingLeft: '15px', color: '#333'}}>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+              <h3 style={{fontSize: 'clamp(22px, 5vw, 28px)', fontWeight: 'bold', marginBottom: '22px', color: '#333', letterSpacing: '0.5px', paddingBottom: '8px', borderBottom: '2px solid rgba(0,0,0,0.05)'}}>Timeline</h3>
+              <ul style={{textAlign: 'left', listStyleType: 'none', paddingLeft: '10px', color: '#333', margin: '0 auto', maxWidth: '280px'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#EA4335', marginRight: '10px', fontWeight: 'bold'}}>•</span> Problem Statements: April 10th, 12:00 AM
                 </li>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#FBBC05', marginRight: '10px', fontWeight: 'bold'}}>•</span> Registration Deadline: April 11th, 12:00 PM
                 </li>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#34A853', marginRight: '10px', fontWeight: 'bold'}}>•</span> Final Presentation: April 12th, 8:30 AM - 5:00 PM
                 </li>
               </ul>
@@ -313,12 +314,12 @@ function App() {
               position: 'relative'
             }}>
               <div style={{height: '4px', width: '60px', background: 'linear-gradient(to right, #FBBC05, #4285F4)', marginBottom: '20px', marginLeft: 'auto', marginRight: 'auto'}}></div>
-              <h3 style={{fontSize: 'clamp(18px, 4vw, 24px)', fontWeight: 'bold', marginBottom: '20px', color: '#333', letterSpacing: '0.5px', paddingBottom: '5px', borderBottom: '2px solid rgba(0,0,0,0.05)'}}>Categories</h3>
-              <ul style={{textAlign: 'left', listStyleType: 'none', paddingLeft: '15px', color: '#333'}}>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+              <h3 style={{fontSize: 'clamp(22px, 5vw, 28px)', fontWeight: 'bold', marginBottom: '22px', color: '#333', letterSpacing: '0.5px', paddingBottom: '8px', borderBottom: '2px solid rgba(0,0,0,0.05)'}}>Categories</h3>
+              <ul style={{textAlign: 'left', listStyleType: 'none', paddingLeft: '10px', color: '#333', margin: '0 auto', maxWidth: '280px'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#FBBC05', marginRight: '10px', fontWeight: 'bold'}}>•</span> Code Crafters: First year BTech Students
                 </li>
-                <li style={{marginBottom: '12px', display: 'flex', alignItems: 'flex-start', fontWeight: '500', fontSize: 'clamp(14px, 2.5vw, 16px)'}}>
+                <li style={{marginBottom: '16px', display: 'flex', alignItems: 'flex-start', fontWeight: '600', fontSize: 'clamp(16px, 3vw, 18px)', textAlign: 'left', width: '100%'}}>
                   <span style={{color: '#4285F4', marginRight: '10px', fontWeight: 'bold'}}>•</span> Code Titans: SY, TY and Final year Students
                 </li>
               </ul>
