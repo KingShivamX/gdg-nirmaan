@@ -99,7 +99,7 @@ function App() {
       }}></style>
       {/* Header */}
       <header style={{
-        padding: '20px',
+        padding: isMobile ? '20px' : '10px',
         display: 'flex',
         alignItems: 'center',
         width: '100%',
@@ -119,8 +119,8 @@ function App() {
       {/* Main Content */}
       <main style={{
         maxWidth: '1200px',
-        margin: '20px auto',
-        padding: '20px 0',
+        margin: isMobile ? '20px auto' : '0 auto',
+        padding: isMobile ? '20px 0' : '0',
         textAlign: 'center',
         position: 'relative',
         zIndex: 5,
@@ -128,16 +128,19 @@ function App() {
       }}>
 
           <div style={{
-            maxWidth: '350px',
-            margin: '0 auto 30px auto',
+            maxWidth: isMobile ? '350px' : '600px',
+            margin: isMobile ? '0 auto 30px auto' : '0 auto 20px auto',
             width: '90%',
             animation: 'glow 3s infinite alternate',
-            paddingTop: '10px'
+            paddingTop: '0px'
           }}>
             <img 
               src={nirmaanLogo} 
               alt="Nirmaan Logo" 
-              style={{width: '100%', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.6))'}} 
+              style={{
+                width: '100%', 
+                filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.6))'
+              }}
             />
           </div>
           
