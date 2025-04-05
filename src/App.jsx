@@ -11,7 +11,8 @@ function App() {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       margin: 0,
-      padding: 0
+      padding: 0,
+      overflowX: 'hidden'
     }}>
       {/* Floating animated elements */}
       <div style={{
@@ -102,11 +103,11 @@ function App() {
       <main style={{
         maxWidth: '1200px',
         margin: '20px auto',
-        padding: '20px',
+        padding: '20px 0',
         textAlign: 'center',
         position: 'relative',
         zIndex: 5,
-        width: '90%'
+        width: '100%'
       }}>
 
           <div style={{
@@ -153,7 +154,7 @@ function App() {
             borderRadius: '15px',
             boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
             border: '1px solid rgba(255,255,255,0.8)',
-            width: '95%'
+            width: 'calc(100% - 40px)'
           }}>
             <p style={{
               fontSize: '1.2rem',
@@ -234,7 +235,7 @@ function App() {
           </div>
 
           {/* Key Information */}
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', maxWidth: '1200px', margin: '40px auto 50px', width: '95%'}}>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', maxWidth: '1200px', margin: '40px auto 50px', width: '100%', padding: '0 20px'}}>
             <div style={{
               backgroundColor: 'rgba(255,255,255,0.9)',
               backdropFilter: 'blur(10px)',
@@ -322,7 +323,9 @@ function App() {
         backdropFilter: 'blur(10px)',
         marginTop: '40px',
         borderTop: '1px solid rgba(255,255,255,0.8)',
-        boxShadow: '0 -5px 20px rgba(0,0,0,0.05)'
+        boxShadow: '0 -5px 20px rgba(0,0,0,0.05)',
+        left: 0,
+        right: 0
       }}>
         <p style={{color: '#333', fontWeight: 'bold', fontSize: 'clamp(14px, 2.5vw, 16px)', padding: '0 20px'}}>
           Questions? Contact us at <a href="mailto:dsc@mitaoe.ac.in" style={{color: '#4285F4', textDecoration: 'underline', fontWeight: 'bold'}}>dsc@mitaoe.ac.in</a> | +91 97641 56062
