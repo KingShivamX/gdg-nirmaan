@@ -2,8 +2,25 @@ import bgImage from './assets/websiteBackground.png';
 import gdgLogo from './assets/GDG_logo.png';
 import nirmaanLogo from './assets/middleLogo.png';
 import './index.css';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    // Initial check
+    checkIsMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkIsMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
   return (
     <div className="relative w-full flex flex-col items-center min-h-screen" style={{
       backgroundImage: `url(${bgImage})`,
@@ -154,7 +171,8 @@ function App() {
             borderRadius: '15px',
             boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
             border: '1px solid rgba(255,255,255,0.8)',
-            width: 'calc(100% - 30px)'
+            width: isMobile ? '85%' : 'calc(100% - 30px)',
+            textAlign: 'center'
           }}>
             <p style={{
               fontSize: 'clamp(1.3rem, 3vw, 1.5rem)',
@@ -169,15 +187,14 @@ function App() {
             </p>
             
             <div style={{
-              display: 'flex',
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              alignItems: 'center',
-              gap: '20px',
+              textAlign: 'center',
               marginTop: '30px',
               width: '100%',
-              padding: '0 10px'
+              display: 'flex',
+              flexDirection: isMobile ? 'column' : 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '20px'
             }}>
               <a 
                 href="/Nexus of Evolution (2).pdf" 
@@ -187,9 +204,9 @@ function App() {
                   backgroundColor: '#4285F4',
                   color: 'white',
                   fontWeight: 'bold',
-                  padding: 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
+                  padding: isMobile ? '12px 30px' : 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
                   borderRadius: '50px',
-                  fontSize: 'clamp(14px, 2.5vw, 18px)',
+                  fontSize: isMobile ? '16px' : 'clamp(14px, 2.5vw, 18px)',
                   textDecoration: 'none',
                   display: 'inline-block',
                   margin: '0',
@@ -200,6 +217,7 @@ function App() {
                   overflow: 'hidden',
                   zIndex: 1,
                   whiteSpace: 'nowrap',
+                  width: isMobile ? '200px' : 'auto',
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = '#3367D6';
@@ -220,9 +238,9 @@ function App() {
                   backgroundColor: 'white',
                   color: '#333',
                   fontWeight: 'bold',
-                  padding: 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
+                  padding: isMobile ? '12px 30px' : 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
                   borderRadius: '50px',
-                  fontSize: 'clamp(14px, 2.5vw, 18px)',
+                  fontSize: isMobile ? '16px' : 'clamp(14px, 2.5vw, 18px)',
                   textDecoration: 'none',
                   display: 'inline-block',
                   margin: '0',
@@ -232,14 +250,15 @@ function App() {
                   position: 'relative',
                   overflow: 'hidden',
                   zIndex: 1,
-                  whiteSpace: 'nowrap'
+                  whiteSpace: 'nowrap',
+                  width: isMobile ? '200px' : 'auto'
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = '#3367D6';
                   e.currentTarget.style.transform = 'translateY(-5px)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = '#4285F4';
+                  e.currentTarget.style.backgroundColor = 'white';
                   e.currentTarget.style.transform = 'translateY(0)';
                 }}
               >
