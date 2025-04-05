@@ -167,9 +167,21 @@ function App() {
               open to all skill levels.
             </p>
             
-            <div className="flex flex-col md:flex-row gap-6 justify-center mt-8">
+            <div style={{
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '20px',
+              marginTop: '30px',
+              width: '100%',
+              padding: '0 10px'
+            }}>
               <a 
-                href="#" 
+                href="/Nexus of Evolution (2).pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   backgroundColor: '#4285F4',
                   color: 'white',
@@ -179,7 +191,7 @@ function App() {
                   fontSize: 'clamp(14px, 2.5vw, 18px)',
                   textDecoration: 'none',
                   display: 'inline-block',
-                  margin: '10px',
+                  margin: '0',
                   boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
                   transition: 'all 0.3s ease',
                   border: '2px solid white',
@@ -188,7 +200,6 @@ function App() {
                   zIndex: 1,
                   whiteSpace: 'nowrap',
                 }}
-                onClick={() => alert('Download brochure link will be added')}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = '#3367D6';
                   e.currentTarget.style.transform = 'translateY(-5px)';
@@ -213,7 +224,7 @@ function App() {
                   fontSize: 'clamp(14px, 2.5vw, 18px)',
                   textDecoration: 'none',
                   display: 'inline-block',
-                  margin: '10px',
+                  margin: '0',
                   boxShadow: '0 10px 25px rgba(234, 67, 53, 0.5)',
                   transition: 'all 0.3s ease',
                   border: '2px solid transparent',
