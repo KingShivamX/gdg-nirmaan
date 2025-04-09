@@ -189,6 +189,35 @@ function App() {
               open to all skill levels.
             </p>
             
+            {/* Notification about problem statements */}
+            <div style={{
+              backgroundColor: 'rgba(66, 133, 244, 0.15)',
+              borderLeft: '4px solid #4285F4',
+              padding: '15px 20px',
+              margin: '0 auto 25px',
+              borderRadius: '8px',
+              maxWidth: '90%',
+              boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <div style={{
+                marginRight: '12px',
+                color: '#4285F4',
+                fontSize: '20px'
+              }}>ℹ️</div>
+              <p style={{
+                margin: 0,
+                fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
+                color: '#333',
+                fontWeight: '500',
+                textAlign: 'left'
+              }}>
+                <strong>Important:</strong> Problem statements will be shared via registered email.
+              </p>
+            </div>
+            
             <div style={{
               textAlign: 'center',
               marginTop: '30px',
