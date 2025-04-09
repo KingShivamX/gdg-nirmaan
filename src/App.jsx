@@ -3,6 +3,7 @@ import gdgLogo from './assets/GDG_logo.png';
 import nirmaanLogo from './assets/middleLogo.png';
 import './index.css';
 import { useState, useEffect } from 'react';
+import problemStatements from './assets/hackathon-statements.pdf';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -214,13 +215,13 @@ function App() {
                 fontWeight: '500',
                 textAlign: 'left'
               }}>
-                <strong>Important:</strong> Problem statements will be shared via registered email.
+                <strong>Important:</strong> You must choose one problem statement from the provided list. Presentation points and evaluation criteria will be announced soon.
               </p>
             </div>
             
-            <div style={{
+            <div style={{ 
               textAlign: 'center',
-              marginTop: '30px',
+              marginTop: '15px',
               width: '100%',
               display: 'flex',
               flexDirection: isMobile ? 'column' : 'row',
@@ -229,7 +230,7 @@ function App() {
               gap: '20px'
             }}>
               <a 
-                href="/Nexus of Evolution (2).pdf" 
+                href={problemStatements}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -238,7 +239,7 @@ function App() {
                   fontWeight: 'bold',
                   padding: isMobile ? '12px 30px' : 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
                   borderRadius: '50px',
-                  fontSize: isMobile ? '16px' : 'clamp(14px, 2.5vw, 18px)',
+                  fontSize: isMobile ? '14px' : 'clamp(14px, 2.5vw, 18px)',
                   textDecoration: 'none',
                   display: 'inline-block',
                   margin: '0',
@@ -249,7 +250,7 @@ function App() {
                   overflow: 'hidden',
                   zIndex: 1,
                   whiteSpace: 'nowrap',
-                  width: isMobile ? '200px' : 'auto',
+                  width: isMobile ? '250px' : 'auto'
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = '#3367D6';
@@ -260,7 +261,7 @@ function App() {
                   e.currentTarget.style.transform = 'translateY(0)';
                 }}
               >
-                Download Brochure
+                Download Problem Statements
               </a>
               <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdYaDYEiCb4vv5E87HxAYEiaTb_0OEnIHEGdyfiIBgJlfc5xg/viewform?usp=sharing" 
