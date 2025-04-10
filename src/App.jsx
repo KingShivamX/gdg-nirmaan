@@ -264,6 +264,40 @@ function App() {
                 Download Problem Statements
               </a>
               <a 
+                href="https://chat.whatsapp.com/G9mFDO22DW4FB1e3HrsNvA" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  backgroundColor: '#25D366',
+                  color: 'white',
+                  fontWeight: 'bold',
+                  padding: isMobile ? '12px 30px' : 'clamp(10px, 3vw, 14px) clamp(20px, 5vw, 36px)',
+                  borderRadius: '50px',
+                  fontSize: isMobile ? '14px' : 'clamp(14px, 2.5vw, 18px)',
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  margin: '0',
+                  boxShadow: '0 10px 25px rgba(37, 211, 102, 0.3)',
+                  transition: 'all 0.3s ease',
+                  border: '2px solid white',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  zIndex: 1,
+                  whiteSpace: 'nowrap',
+                  width: isMobile ? '250px' : 'auto'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#128C7E';
+                  e.currentTarget.style.transform = 'translateY(-5px)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = '#25D366';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                Join WhatsApp Group
+              </a>
+              <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdYaDYEiCb4vv5E87HxAYEiaTb_0OEnIHEGdyfiIBgJlfc5xg/viewform?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
