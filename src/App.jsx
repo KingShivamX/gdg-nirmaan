@@ -1,4 +1,5 @@
 import bgImage from './assets/websiteBackground.png';
+import { Analytics } from "@vercel/analytics/react"
 import gdgLogo from './assets/GDG_logo.png';
 import nirmaanLogo from './assets/middleLogo.png';
 import './index.css';
