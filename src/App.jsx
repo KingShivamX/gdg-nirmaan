@@ -199,24 +199,94 @@ function App() {
               borderRadius: '8px',
               maxWidth: '90%',
               boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
+            }}>
+            </div>
+
+            {/* Urgent Statement Choice Form Notice */}
+            <div style={{
+              backgroundColor: 'rgba(234, 67, 53, 0.15)',
+              borderLeft: '4px solid #EA4335',
+              padding: '15px 20px',
+              margin: '0 auto 25px',
+              borderRadius: '8px',
+              maxWidth: '90%',
+              boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
               display: 'flex',
+              flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center'
             }}>
-              <div style={{
-                marginRight: '12px',
-                color: '#4285F4',
-                fontSize: '20px'
-              }}>ℹ️</div>
-              <p style={{
-                margin: 0,
-                fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
-                color: '#333',
-                fontWeight: '500',
-                textAlign: 'left'
+              <p style={{ 
+                fontSize: '1.1rem', 
+                color: '#EA4335', 
+                fontWeight: 'bold',
+                marginBottom: '15px',
+                textAlign: 'center'
               }}>
-                <strong>Important:</strong> You must choose one problem statement from the provided list. Presentation points and evaluation criteria will be announced soon.
+                ⚠️ URGENT: Fill the Statement Choice Form by 6:00 PM Today! ⚠️
               </p>
+              <a
+                href="https://forms.gle/cGJmWVmeuCWzxCNE9"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  padding: '10px 25px',
+                  backgroundColor: '#EA4335',
+                  color: 'white',
+                  borderRadius: '25px',
+                  textDecoration: 'none',
+                  fontWeight: 'bold',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#D32F2F'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#EA4335'}
+              >
+                Fill Statement Choice Form
+              </a>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                width: '100%',
+                padding: '0 15px'
+              }}>
+                <p style={{
+                  margin: '0 0 15px 0',
+                  fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
+                  color: '#333',
+                  fontWeight: '500'
+                }}>
+                  <strong>Important:</strong> You must choose one problem statement from the provided list.
+                </p>
+                <div style={{
+                  backgroundColor: 'rgba(66, 133, 244, 0.1)',
+                  padding: '15px 20px',
+                  borderRadius: '10px',
+                  width: '100%'
+                }}>
+                  <p style={{
+                    margin: '0 0 10px 0',
+                    fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
+                    color: '#4285F4',
+                    fontWeight: 'bold'
+                  }}>Reference for PPT (optional):</p>
+                  <ol style={{
+                    margin: '0',
+                    paddingLeft: '20px',
+                    color: '#333',
+                    fontSize: 'clamp(0.9rem, 1.8vw, 1rem)'
+                  }}>
+                    <li>About the problem statement</li>
+                    <li>Key challenges in the pre-existing solutions</li>
+                    <li>Tech stack (Frontend, Backend, etc.)</li>
+                    <li>Your solution</li>
+                    <li>Differentiating factor</li>
+                    <li>Workflow</li>
+                    <li>The Market Opportunity</li>
+                  </ol>
+                </div>
+              </div>
             </div>
             
             <div style={{ 
